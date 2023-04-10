@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>MEDIDA DE IMC</h1>
+    <br />
+    Averigualo <a href="http://www.google.com"> Aqui </a>
+    <script>
+
+      function espacios(){
+          document.write("<br>");
+          document.write("<br>");
+          document.write("<br>");
+      }
+
+      function imprimir(frase){
+          espacios();
+          document.write(frase);
+          espacios();
+      }
+
+      function calculoImc(peso,altura){
+          let imc=peso/(altura*altura);
+          return imc;
+      }
+
+      let nombre=prompt("Ingrese su nombre: ")
+      peso=prompt(nombre+" Ingrese su peso: ");
+      altura=prompt(nombre +" Ingrese su altura: ");
+
+      let resultado= calculoImc(peso,altura)
+      document.write("El imc del cliente es: "+ resultado)
+
+      if(resultado < 18.5){
+        imprimir("Insuficiencia ponderal");
+      }
+
+      if(resultado>=18.5 && resultado<=24.9){
+        imprimir("Intervalo normal");
+      }
+
+      if(resultado>=25.0){
+        imprimir("Sobrepeso");
+      }
+
+      if(resultado>=30.0){
+        imprimir("Obesidad");
+      }
+    </script>
+  </body>
+</html>

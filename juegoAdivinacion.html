@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JUEGO DE ADIVINACION</h1>
+    <br />
+    Averigualo <a href="http://www.google.com"> Aqui </a>
+    <script>
+
+      function espacios(){
+          document.write("<br>");
+          document.write("<br>");
+          document.write("<br>");
+      }
+
+      function imprimir(frase){
+          espacios();
+          document.write(frase);
+          espacios();
+      }
+
+      let numeropensado=Math.round(Math.random()*10);
+      let numeroLanzado=parseInt(prompt("Digite un número: "));
+
+      if(numeroLanzado==numeropensado){
+        imprimir("ACERTASTE");
+      }else{
+        imprimir("ERRASTE, el numero era "+ numeropensado);
+      }  
+    </script>
+  </body>
+</html>
