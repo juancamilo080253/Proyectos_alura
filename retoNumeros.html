@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Mision: mostrar numeros pares del 1 al 100
+
+      function espacios() {
+        document.write("<br>");
+        document.write("<br>");
+      }
+
+      function imprimir(frase) {
+        espacios();
+        document.write(frase);
+      }
+
+      function numeroPar(numero) {
+        if (numero % 2 == 0) {
+          imprimir(numero + " es par");
+        } else {
+          imprimir("Numero impar");
+        }
+      }
+
+      let contador = 1;
+
+      while (contador <= 100) {
+        numeroPar(contador);
+        contador++;
+      }
+
+
+      //solucion ALURA
+
+      /*
+      var contador = 2;
+      while (contador <= 100) {
+        imprimir(contador);
+        contador = contador + 2; // incrementar de dos en dos
+      }
+      imprimir("FIN");
+      */
+
+    </script>
+  </body>
+</html>
