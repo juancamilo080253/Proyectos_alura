@@ -24,14 +24,24 @@
           espacios();
       }
 
-      let numeropensado=Math.round(Math.random()*10);
-      let numeroLanzado=parseInt(prompt("Digite un número: "));
+      let numeroIntentos=3;
+      let contador=1;
 
-      if(numeroLanzado==numeropensado){
-        imprimir("ACERTASTE");
-      }else{
-        imprimir("ERRASTE, el numero era "+ numeropensado);
-      }  
+      while(contador<=numeroIntentos){
+
+        let numeropensado=Math.round(Math.random()*10);
+        let numeroLanzado=parseInt(prompt("Digite un número: "));
+
+        if(numeroLanzado==numeropensado){
+          alert("ACERTASTE, en el intento "+ contador + ", Numero pensado "+  numeropensado, );
+          break; //se sale del while
+        }else{
+          alert("ERRASTE, el numero era "+ numeropensado);
+        } 
+        contador++;
+      }
+
+      imprimir("FIN");
     </script>
   </body>
 </html>

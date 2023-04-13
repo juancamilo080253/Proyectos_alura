@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Tablas de multiplicar</h1>
+    <br />
+    
+    <script>
+
+      function espacios(){
+          document.write("<br>");
+          document.write("<br>");
+        }
+
+      function imprimir(frase){
+          espacios();
+          document.write(frase);
+          espacios();
+        }
+
+        //FOR ANIDADOS 
+
+        for(let lineas=1;lineas<=3;lineas++){
+            for(let estrellas=1;estrellas<=10;estrellas++){
+                document.write("*")
+            }
+            espacios();
+        }
+
+    </script>
+  </body>
+</html>
