@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <canvas width="600" height="400">
+    </canvas>
+
+    <script>
+        var pantalla=document.querySelector("canvas");
+        var pincel=pantalla.getContext("2d");//traeme el contenido de la pantalla, 2 dimensiones
+        
+        pincel.fillStyle="lightgrey";//propiedad // definir color 
+        pincel.fillRect(0,0,600,400);//funcion , fill=rellenar rect=rectangulo
+        
+        
+        pincel.fillStyle="green";
+        pincel.fillRect(0,0,200,400);
+
+        pincel.fillStyle="red";
+        pincel.fillRect(400,0,200,400); //x,y,ancho,alto
+
+        pincel.fillStyle="yellow";
+        pincel.beginPath();//iniciar nueva ruta o camino
+        pincel.moveTo(300,200);
+        pincel.lineTo(200,400);// dibuja una linea 
+        pincel.lineTo(400,400);
+        pincel.fill();//rellenar
+
+        pincel.fillStyle="blue";
+        pincel.beginPath();//iniciar nueva ruta o camino
+        pincel.arc(300,200,50,0,2*3.14);
+        pincel.fill();//rellenar
+
+        
+
+    </script>
+</body>
+</html>

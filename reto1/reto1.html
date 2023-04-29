@@ -1,18 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reto1</title>
-</head>
-<body>
-    <input type="text">
-    <button>Encriptar</button>
-    <button>Desencriptar</button>
-    
+    <link rel="stylesheet" href="./reto1.css" />
+  </head>
+  <body>
+    <h1>Programa para encriptar</h1>
+    <textarea id="textoRecibido" cols="30" rows="10" autofocus></textarea>
+    <textarea id="textoEnviado" cols="30" rows="10"></textarea>
+
+    <!-- <input type="text"/> -->
+    <button id="btn-encriptar">Encriptar</button>
+    <button id="btn-desencriptar">Desencriptar</button>
+
     <script>
 
+      function encriptar() {
+
+        let textoRecibido = document.querySelector("#textoRecibido").value;
+        let mensajeLetras = textoRecibido.toLowerCase().split(""); //separador de string
+        
+        for (let posicion = 0; posicion < mensajeLetras.length; posicion++) {
+          if (mensajeLetras[posicion] == "a") {
+            mensajeLetras[posicion] = "ai";
+          }
+
+          if (mensajeLetras[posicion] == "e") {
+            mensajeLetras[posicion] = "enter";
+          }
+
+          if (mensajeLetras[posicion] == "i") {
+            mensajeLetras[posicion] = "imes";
+          }
+
+          if (mensajeLetras[posicion] == "o") {
+            mensajeLetras[posicion] = "ober";
+          }
+
+          if (mensajeLetras[posicion] == "u") {
+            mensajeLetras[posicion] = "ufat";
+          }
+        }
+
+        mensajeLetras = mensajeLetras.join("");
+        return document.querySelector("#textoEnviado").value = mensajeLetras;
+      }
+
+      function desencriptar() {
+        let mensaje = document.querySelector("#textoRecibido").value;
+        let mensajeEncriptado = mensaje
+          .replaceAll("ai", "a")
+          .replaceAll("enter", "e")
+          .replaceAll("imes", "i")
+          .replaceAll("ober", "o")
+          .replaceAll("ufat", "u");
+
+         return document.querySelector("#textoEnviado").value = mensajeEncriptado;
+      }
+
+      let buttonEncriptar = document.querySelector("#btn-encriptar"); //capturar objeto button
+      buttonEncriptar.onclick = encriptar; //sin parentesis para que no ejecute a la entrada, si no cuando se le llame
+      
+      let buttonDesencriptar = document.querySelector("#btn-desencriptar");
+      buttonDesencriptar.onclick = desencriptar;
     </script>
-</body>
+  </body>
 </html>

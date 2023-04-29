@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <canvas width="600" height="400">
+    </canvas>
+
+    <script>
+
+        function dibujarCuadrado(x,y,color){
+        
+            var pantalla=document.querySelector("canvas");
+            var pincel=pantalla.getContext("2d");//traeme el contenido de la pantalla, 2 dimensiones
+            pincel.fillStyle=color;
+            pincel.fillRect(x,y,50,50);//rellenarRectangulo
+            pincel.strokeStyle="black";
+            pincel.strokeRect(x,y,50,50);
+
+        }
+
+        /*
+        for(let x=0 ;x<600;x+=50){
+            dibujarCuadrado(x,0,"yellow");
+            dibujarCuadrado(x,50,"blue");
+            dibujarCuadrado(x,100,"red");
+        }
+        */
+
+        let x=0;
+        while(x<600){
+            dibujarCuadrado(x,0,"yellow");
+            dibujarCuadrado(x,50,"blue");
+            dibujarCuadrado(x,100,"red");
+            x+=50;//igual a x=x+50
+        }
+        
+
+    </script>
+</body>
+</html>

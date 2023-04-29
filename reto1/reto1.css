@@ -1,0 +1,55 @@
+body {
+    background-color: #f9eeda;
+}
+
+
+#btn-encriptar {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 300px;
+    top: 472px;
+
+    background: #ACF871;
+    border: 2px solid #000000;
+    border-radius: 36px;
+    font-size: 20px;
+}
+
+#btn-desencriptar {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 300px;
+    top: 550px;
+
+    background: #FFFFFF;
+    border: 3px solid #000000;
+    border-radius: 36px;
+    font-size: 20px;
+}
+
+#textoRecibido {
+    position: absolute;
+    width: 490px;
+    height: 350px;
+    left: 144px;
+    top: 64px;
+    background: #ffffff;
+    font-size: 30px;
+}
+
+#textoEnviado {
+    position: absolute;
+    width: 497px;
+    height: 350px;
+    left: 693px;
+    top: 64px;
+    background: #ffffff;
+    font-size: 30px;
+}
+
