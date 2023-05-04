@@ -1,0 +1,44 @@
+.titulo-principal {
+   padding-left: 30px; 
+}
+
+#barberiaJpg {
+    width: 100%;
+}
+
+#principal{
+    padding: 20px; /*Margen interno*/
+    background: #CCCCCC;
+}
+
+.titulo-centralizado {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+#mision {
+    font-size: 20px;
+}
+
+em strong {
+    color: red;
+}
+
+
+ul{
+    display:inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.lista {
+    font-style: italic;
+}
+
+#imagenDiferenciales{
+    width: 50%;
+}
