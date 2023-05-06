@@ -1,0 +1,29 @@
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caja{
+    width: 940px;/*la mayoria de las pantallas lo manejan*/
+    position: relative;/* me permite posicionar el elemento*/
+    margin: 0 auto;/*0 para sup e inf , auto para ancho*/
+}
+
+nav{
+    position: absolute; /*Posicionar elemento*/
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline ;
+    margin: 0 0 0 15px; /*Espacio entre los elementos*/
+}
+
+nav a {
+    text-transform: uppercase; /*Pasar a mayusculas*/
+    color: #000000;
+    font-weight: bold; /*Poner negrita*/
+    font-size: 22px;
+    text-decoration: none;/*Quitar subrayado de hipervinculo*/
+}
