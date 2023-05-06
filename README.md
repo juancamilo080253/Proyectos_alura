@@ -15,6 +15,6 @@
 -
 -
 ### HTML 1 y 2 con CSS
--
--
--
+- Creacion de pagina web de una barberia
+- Bases de HTML Y CSS
+- Margin - Padding - Inicio de position (css)
