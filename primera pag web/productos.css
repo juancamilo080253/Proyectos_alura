@@ -16,8 +16,8 @@ nav{
 }
 
 nav li{
-    display: inline ;
-    margin: 0 0 0 15px; /*Espacio entre los elementos*/
+    display: inline ; /*Se quita botones de los LI*/
+    margin: 0 0 0 15px; /*Espacio entre los elementos, Manecilla reloj*/
 }
 
 nav a {
@@ -26,4 +26,55 @@ nav a {
     font-weight: bold; /*Poner negrita*/
     font-size: 22px;
     text-decoration: none;/*Quitar subrayado de hipervinculo*/
+}
+
+nav a:hover{ /*Captura el movimiento del moouse*/
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.productos{
+    width: 940px;/*la mayoria de las pantallas lo manejan*/
+    margin: 0 auto;/*0 para sup e inf , auto para ancho*/
+    padding: 50px;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%; /*Espacio entre los elementos*/
+    padding: 30px 20px; /*Espacio alrededor del elemento*/
+    box-sizing: border-box; /* con esta propiedad los 20px van a ser contabilizados desde ese 30%*/
+    border: 2px solid #000000; /*Ancho,estilo,color*/
+    border-radius: 10px; /*Borde redondo*/
+}
+
+.productos li:hover{/*Pasar el mouse sobre un item*/
+    border-color:#c78c19 ;
+}
+
+.productos li:active{/*Cuando esta siendo clicado por el usuario*/
+    border-color: #088c19;
+}
+
+.productos h2{ /* Selector de productos a hijo h2*/
+    font-size: 30px;
+    font-weight: bold; /*Negrita*/
+}
+
+.productos li:hover h2{/*Que me afecte especificamente este h2*/
+    font-size: 33px;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px; /*Crea espacios entre los elementos*/
+
 }
