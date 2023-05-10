@@ -78,3 +78,15 @@ nav a:hover{ /*Captura el movimiento del moouse*/
     margin-top: 10px; /*Crea espacios entre los elementos*/
 
 }
+
+footer{
+    text-align: center;
+    background:url(imagenes/bg.jpg);/*Agregar imagen de fondo*/
+    padding: 40px; 
+}
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
