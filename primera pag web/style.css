@@ -1,44 +1,162 @@
-.titulo-principal {
-   padding-left: 30px; 
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0;
 }
 
-#barberiaJpg {
-    width: 100%;
+.caja{
+    width: 940px;/*la mayoria de las pantallas lo manejan*/
+    position: relative;/* me permite posicionar el elemento*/
+    margin: 0 auto;/*0 para sup e inf , auto para ancho*/
 }
 
-#principal{
-    padding: 20px; /*Margen interno*/
-    background: #CCCCCC;
+nav{
+    position: absolute; /*Posicionar elemento*/
+    top: 110px;
+    right: 0;
 }
 
-.titulo-centralizado {
+nav li{
+    display: inline ; /*Se quita botones de los LI*/
+    margin: 0 0 0 15px; /*Espacio entre los elementos, Manecilla reloj*/
+}
+
+nav a {
+    text-transform: uppercase; /*Pasar a mayusculas*/
+    color: #000000;
+    font-weight: bold; /*Poner negrita*/
+    font-size: 22px;
+    text-decoration: none;/*Quitar subrayado de hipervinculo*/
+}
+
+nav a:hover{ /*Captura el movimiento del moouse*/
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.productos{
+    width: 940px;/*la mayoria de las pantallas lo manejan*/
+    margin: 0 auto;/*0 para sup e inf , auto para ancho*/
+    padding: 50px;
+}
+
+.productos li{
+    display: inline-block;
     text-align: center;
-}
-
-p {
-    text-align: center;
-}
-
-#mision {
-    font-size: 20px;
-}
-
-em strong {
-    color: red;
-}
-
-
-ul{
-    display:inline-block;
+    width: 30%;
     vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
+    margin: 0 1.5%; /*Espacio entre los elementos*/
+    padding: 30px 20px; /*Espacio alrededor del elemento*/
+    box-sizing: border-box; /* con esta propiedad los 20px van a ser contabilizados desde ese 30%*/
+    border: 2px solid #000000; /*Ancho,estilo,color*/
+    border-radius: 10px; /*Borde redondo*/
 }
 
-.lista {
-    font-style: italic;
+.productos li:hover{/*Pasar el mouse sobre un item*/
+    border-color:#c78c19 ;
 }
 
-#imagenDiferenciales{
+.productos li:active{/*Cuando esta siendo clicado por el usuario*/
+    border-color: #088c19;
+}
+
+.productos h2{ /* Selector de productos a hijo h2*/
+    font-size: 30px;
+    font-weight: bold; /*Negrita*/
+}
+
+.productos li:hover h2{/*Que me afecte especificamente este h2*/
+    font-size: 33px;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px; /*Crea espacios entre los elementos*/
+
+}
+
+footer{
+    text-align: center;
+    background:url(imagenes/bg.jpg);/*Agregar imagen de fondo*/
+    padding: 40px; 
+}
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+
+.main-contacto{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label{
+    display: block;
+    font-size: 20px;
+    margin: 5px 0 10px;
+}
+
+form legend,fieldset{
+    font-size: 20px;
+    margin: 20px 0 20px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 5px 40px; /*5px arriba-abajo 40px izq-der*/
     width: 50%;
+}
+
+#dropdown{
+    padding: 3px 20px;
+}
+
+#checkbox{
+    margin: 20px 7px;
+}
+
+.boton-enviar{
+    width: 25%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px; /*Redondear esquinas*/
+    transition: 1s all; /*Transicion lenta*/
+    cursor: pointer;/*Cambiar cursor a manita */
+}
+
+.boton-enviar:hover{
+    background: darkorange;
+    transform: scale(1.1);
+}
+
+table{
+    margin: 40px;
+    text-align: center;
+}
+
+th{
+ background-color: #555;
+ color: white;
+ font-weight: bold
+}
+
+td,th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
 }
